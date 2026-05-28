@@ -1,6 +1,6 @@
 ﻿# R-AI-D
 
-Automated subdomain discovery and AI-powered reconnaissance triage.
+Automated AI-powered passive reconnaissance tool.
 
 ## Features
 
@@ -46,9 +46,20 @@ Model for Higher-end devices:
 
 ## Run
 
+R-AI-D supports dynamic model switching through environment variables.
+By default, the project uses: llama3.2:3b
+You can swap models at runtime without changing the code.
+
+## Deafult Run
+
 ```bash
-python main.py example.com
+python main.py example_target.com
 ```
+
+```bash
+OLLAMA_MODEL=ENTER_MODEL_NAME_HERE python main.py example_target.com
+```
+
 
 ---
 
