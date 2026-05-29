@@ -34,13 +34,13 @@ R-AI-D supports dynamic model switching through environment variables.
 By default, the project uses: llama3.2:3b
 You can swap models at runtime without changing the code.
 
-## Deafult Run
+### Deafult Run
 
 ```bash
 python main.py example_target.com
 ```
 
-## Model Swap Run
+### Model Swap Run
 
 ```bash
 OLLAMA_MODEL=ENTER_MODEL_NAME_HERE python main.py example_target.com
