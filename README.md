@@ -14,7 +14,7 @@ Automated AI-powered passive reconnaissance tool.
 
 ---
 
-## Set UP
+## Setup
 
 ###  Install dependencies
 
