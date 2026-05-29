@@ -1,4 +1,5 @@
-﻿# R-AI-D
+# R-AI-D
+
 
 Automated AI-powered passive reconnaissance tool.
 
@@ -13,34 +14,17 @@ Automated AI-powered passive reconnaissance tool.
 
 ---
 
-## Install
+## Set UP
 
-### 1. Install dependencies
+###  Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Install Ollama
+###  Install Ollama & Download Models
 
 https://ollama.com
-
-### 4. Pull model
-
-```bash
-ollama pull MODEL NAME
-```
-
-Models for Low-end devices:
-
-* llama3.2:3b
-* phi3:mini
-
-Model for Higher-end devices:
-
-* mistral
-* qwen2.5
-
 
 ---
 
@@ -56,15 +40,15 @@ You can swap models at runtime without changing the code.
 python main.py example_target.com
 ```
 
+## Model Swap Run
+
 ```bash
 OLLAMA_MODEL=ENTER_MODEL_NAME_HERE python main.py example_target.com
 ```
 
-
 ---
 
 ## Outputs
-
 
 ```bash
 cat output/prioritized_targets.json
