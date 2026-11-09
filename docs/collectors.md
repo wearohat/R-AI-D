@@ -81,5 +81,3 @@ The collectors layer uses:
 * passive reconnaissance only
 * no active probing
 * no intrusive scanning
-
-

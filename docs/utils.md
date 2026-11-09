@@ -11,6 +11,7 @@ Provides:
 * centralized logging
 * structured console output
 * debugging support
+* live log in the GUI
 
 ---
 
@@ -21,6 +22,3 @@ Contains:
 * filename sanitization
 * subdomain validation
 * shared helper logic
-
----
-

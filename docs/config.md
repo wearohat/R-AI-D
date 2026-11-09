@@ -30,11 +30,34 @@ OLLAMA_MODEL = "llama3.2:3b"
 
 # Dynamic Model Switching
 
-Models can be swapped at runtime:
+Models can be swapped at runtime
+
+
+---
+
+# API Keys
+
+Set as environment variables or in the GUI Settings tab:
 
 ```bash
-OLLAMA_MODEL=deepseek-r1:14b python main.py example_target.com
+OPENROUTER_API_KEY=...
+ORCAROUTER_API_KEY=...
+SHODAN_API_KEY=...
+VIRUSTOTAL_API_KEY=...
+URLHAUS_API_KEY=...
 ```
+
+---
+
+# GUI Settings
+
+Stored in:
+
+```text
+output/gui_settings.json
+```
+
+API keys are saved only if "Remember API keys" is ticked.
 
 ---
 
@@ -45,6 +68,3 @@ Configured:
 * output directory
 * evidence directory
 * report locations
-
----
-

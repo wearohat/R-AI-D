@@ -7,9 +7,11 @@ Collectors
     ↓
 Enrichers
     ↓
+MITRE ATT&CK
+    ↓
 AI Analysis
     ↓
-Reporting
+GUI / Reporting
 ```
 
 ---
@@ -48,12 +50,33 @@ Tasks:
 
 * DNS resolution
 * InternetDB querying
+* Shodan API querying
+* VirusTotal checks
+* URLhaus checks
 * evidence storage
 
 Output:
 
 ```text
 output/evidence/*.json
+output/shodan/*.json
+output/virustotal/*.json
+output/urlhaus/*.json
+```
+
+---
+
+## MITRE ATT&CK Layer
+
+Responsible for:
+
+* naming every recon activity
+* standardized technique names and IDs
+
+Output:
+
+```text
+output/last_scan.json
 ```
 
 ---
@@ -70,7 +93,9 @@ Responsible for:
 
 Uses:
 
-* local LLMs through Ollama
+* Ollama 
+* OpenRouter
+* OrcaRouter
 
 Output:
 
@@ -80,13 +105,11 @@ output/prioritized_targets.json
 
 ---
 
-## Reporting Layer
+## GUI / Reporting Layer
 
 Responsible for:
 
-* human-readable terminal output
+* running scans
+* results table
+* charts
 * structured JSON reports
-* future dashboard integration
-
----
-

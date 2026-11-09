@@ -22,7 +22,23 @@ output/evidence/
 
 Contains:
 
-* one JSON evidence file per subdomain
+* one InternetDB JSON file per subdomain
+
+---
+
+# shodan/ virustotal/ urlhaus/
+
+Location:
+
+```text
+output/shodan/
+output/virustotal/
+output/urlhaus/
+```
+
+Contains:
+
+* one JSON file per subdomain per source
 
 ---
 
@@ -41,4 +57,19 @@ Contains:
 * reasoning
 * recommendations
 
+---
 
+# last_scan.json
+
+Location:
+
+```text
+output/last_scan.json
+```
+
+Contains:
+
+* scan summary
+* sources used
+* errors
+* MITRE ATT&CK techniques

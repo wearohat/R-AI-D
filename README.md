@@ -1,57 +1,48 @@
 # R-AI-D
-
-
-Automated AI-powered passive reconnaissance tool.
-
+ 
+AI-powered passive reconnaissance framework.
+ 
+Everything is passive: the target is never scanned or probed.
+ 
 ## Features
-
-- AlienVault enumeration
-- URLScan enumeration
-- Wayback Machine enumeration
-- InternetDB enrichment
-- Local LLM analysis
-- Automatic prioritization
-
+ 
+- Subdomain enumeration: AlienVault OTX, URLScan.io, Wayback Machine
+- Host enrichment: Shodan InternetDB, Shodan API
+- Threat intelligence: VirusTotal, URLhaus
+- MITRE ATT&CK technique names and IDs for every recon activity
+- AI prioritisation with local or cloud solutions
+- Desktop GUI with results and charts
+ 
 ---
-
+ 
 ## Setup
-
-###  Install dependencies
-
+ 
+### Install dependencies
+ 
 ```bash
 pip install -r requirements.txt
 ```
-
-###  Install Ollama & Download Models
-
-https://ollama.com
-
+ 
+### AI provider
+ 
+- **Ollama** (local, no key): install from https://ollama.com, then run `ollama pull llama3.2:3b`
+- **OpenRouter**: API key from https://openrouter.ai
+- **OrcaRouter**: API key from https://orcarouter.ai
+ 
+### Optional API keys
+ 
+- Shodan: https://account.shodan.io
+- VirusTotal: https://www.virustotal.com
+- URLhaus: https://auth.abuse.ch
+ 
+Add them in the GUI's **Settings** tab. Sources without a key are skipped.
+ 
 ---
-
+ 
 ## Run
-
-R-AI-D supports dynamic model switching through environment variables.
-By default, the project uses: llama3.2:3b
-You can swap models at runtime without changing the code.
-
-### Deafult Run
-
+ 
+### GUI
+ 
 ```bash
-python main.py example_target.com
+python3 run_gui.py
 ```
-
-### Model Swap Run
-
-```bash
-OLLAMA_MODEL=ENTER_MODEL_NAME_HERE python main.py example_target.com
-```
-
----
-
-## Outputs
-
-```bash
-cat output/prioritized_targets.json
-```
-
----

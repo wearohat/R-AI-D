@@ -41,8 +41,20 @@ ollama list
 
 ---
 
-# Run Project
+# Optional API Keys
+
+* OpenRouter: https://openrouter.ai
+* OrcaRouter: https://orcarouter.ai
+* Shodan: https://account.shodan.io
+* VirusTotal: https://www.virustotal.com
+* URLhaus: https://auth.abuse.ch
+
+---
+
+# Run GUI
 
 ```bash
-python main.py example_target.com
+python run_gui.py
 ```
+
+
