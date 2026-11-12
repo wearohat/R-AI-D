@@ -1,0 +1,7 @@
+output/
+__pycache__/
+*.pyc
+gui_settings.json
+finetune/dataset.jsonl
+.venv/
+venv/
